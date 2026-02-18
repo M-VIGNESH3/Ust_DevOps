@@ -16,7 +16,7 @@ for i in l:
         d[i]+=1
 s=sum(d.values())
 rl=[]
-print(s)
+# print(s)
 for i in d.keys():
     t=d[i]
     
@@ -24,12 +24,13 @@ for i in d.keys():
         
         rl.append(i)
 
-print(d)
-print(rl)
+# print(d)
+# print(rl)
 c=1
 for i in ll:
     for j in rl:
         if j in i:
             print(c)
     c+=1
+
 
