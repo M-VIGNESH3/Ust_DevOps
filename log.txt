@@ -1,49 +1,34 @@
-1. The "Ghost" File Recovery Monitor
-A script that monitors a specific directory for "delete" events. When a file is deleted, it immediately copies the file from a hidden "Shadow" directory to a "Recycle Bin" folder with a metadata file showing who deleted it and when.
-
-Key Libraries: watchdog, shutil, getpass.
-
-2. Local Port & Process "Traffic Cop"
-A tool that maps every open network port on the machine to its specific Process ID (PID) and the user running it. It generates a summary of "Suspicious Ports" (e.g., anything open that isn't on a pre-approved whitelist).
-
-Key Libraries: psutil, socket.
-
-3. Intelligent Log "Anomalizer"
-Instead of just searching for "Error," this script reads a log file and uses a dictionary to count occurrences of every unique word. It then flags lines that contain words that appear in less than 1% of the total log (finding the "needle in the haystack").
-
-Key Libraries: collections.Counter, re.
-
-4. The "Disk Space" Emergency Brake
-A background daemon that monitors disk usage. If a specific partition hits 90%, it identifies the top 5 largest files and moves them to a compressed .zip archive on a different drive (or a /tmp folder) to prevent system a crash.
-
-Key Libraries: os, zipfile, platform.
-
-5. Automated Config "Validator"
-DevOps involves many .yaml, .json, and .ini files. This script takes a "Schema" and validates that all configuration files in a folder follow the rules (e.g., "Port" must be an integer between 1024-65535).
-
-Key Libraries: yaml, json, configparser.
-
-6. Multi-Threaded Local File Searcher
-Build a tool that mimics the find command but uses Python's threading to search for a specific string inside thousands of files simultaneously, returning the line number and a "snippet" of the context.
-
-Key Libraries: threading or concurrent.futures, mmap.
-
-7. System "Snapshot" Comparison Tool
-This script takes a "snapshot" of the machine (installed packages, environment variables, and active users) and saves it to a file. Users can run it again later to see a "Diff" of exactly what changed on the system.
-
-Key Libraries: subprocess, difflib.
-
-8. Local "Web-Hook" Trigger
-A small Python web server that stays idle until it receives a specific "GET" request from another machine on the local network. Upon receiving it, it executes a pre-defined local maintenance script (like clearing logs).
-
-Key Libraries: flask or http.server.
-
-9. Secure File "Vault" with Audit Logs
-A CLI tool that encrypts/decrypts files in a specific folder using a master password. It must maintain an audit.log of every successful and failed attempt to access the vault.
-
-Key Libraries: cryptography.fernet, logging.
-
-10. The "Dotfile" Sync Manager
-A script that manages your configuration files (.bashrc, .vimrc, etc.). It symlinks files from a central "Settings" folder to the Home directory and tracks versions, allowing you to "rollback" to a previous configuration state.
-
-Key Libraries: pathlib, os.symlink
+vignesh
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
+a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c a b c
